@@ -1,0 +1,28 @@
+.header{
+	top:0;
+	left:0;
+	position:fixed;
+	z-index:500;
+	width:100vw;
+	&__container{
+		margin:auto;
+		max-width:90vw;
+		display:flex;
+		justify-content:space-between;
+		padding:35px 0;
+	}
+	&__logo{
+		width:250px;
+		svg{
+			width:95%;
+			path{
+				fill:$white;
+			}
+		}
+	}
+	&__links{
+		display:flex;
+		align-items:center;
+		justify-content:space-around;
+	}
+}
