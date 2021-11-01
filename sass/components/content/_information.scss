@@ -1,0 +1,120 @@
+.information{
+	position:relative;
+	overflow:hidden;
+	&__container{
+		display:grid;
+		grid-template-columns: repeat(3, 1fr);
+		position:relative;
+		@media screen and (max-width:1023px){
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	&__content{
+		position:relative;
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position:center;
+		top:0;
+		left:0;
+		right:0;
+		bottom: 0;
+		opacity:1;
+		transition:.5s;
+		height:750px;
+		max-height:75vh;
+		&:hover{
+			opacity:.9;
+			transition:.5s;
+			cursor:pointer;
+		}
+		&:before{
+			top:0;
+			left:0;
+			right:0;
+			bottom: 0;
+			content: '';
+			position:absolute;
+			background: rgb(0,0,0);
+			background: linear-gradient(0deg, rgba(0,0,0,0.67) 0%, rgba(0,0,0,0.3) 100%);
+			z-index:1;
+		}
+		&.open{
+			transition:.5s;
+		}
+		& > div{
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom: 0;
+			display:flex;
+			align-items:center;
+			justify-content: center;
+			flex-direction: column;
+			z-index:2;
+		}
+	}
+	&__block{
+		height:100%;
+		width:100vw;
+		position:absolute;
+		top:100%;
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position:center;
+		z-index:2;
+		transition:.5s;
+		@media screen and (max-width:1023px){
+			position:fixed;
+			height:75vh;
+			top:50%;
+			transform: translateY(-50%);
+			opacity:0;
+			visibility:hidden;
+		}
+		&.active{
+			top:0;
+			transition:.5s;
+			@media screen and (max-width:1023px){
+				top:50%;
+				opacity:1;
+				visibility:visible;
+			}
+		}
+		&--content{
+			max-width:400px;
+			position:absolute;
+			left:20vw;
+			top:50%;
+			transform: translateY(-50%);
+			@media screen and (max-width:1023px){
+				left:50%;
+				transform: translate(-50%, -50%);
+				width:400px;
+				max-width:75vw;
+			}
+		}
+		&:before{
+			top:0;
+			left:0;
+			right:0;
+			bottom: 0;
+			content: '';
+			position:absolute;
+			background: rgb(0,0,0);
+			background: linear-gradient(0deg, rgba(0,0,0,0.67) 0%, rgba(0,0,0,0.3) 100%);
+			z-index:1;
+		}
+		& > div{
+			z-index:2;
+			position:relative;
+		}
+		&--circle{
+			transform:rotate(180deg);
+			width:24px;
+			&:hover{
+				cursor:pointer;
+			}
+		}
+	}
+}
