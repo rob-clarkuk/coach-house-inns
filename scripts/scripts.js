@@ -12,6 +12,7 @@ $(window).scroll(function() {
 	}
 });
 
+
 $.fn.isOnScreen = function() {
 	var win = $(window);
 
@@ -98,6 +99,7 @@ $('.information__content').on('click', function(){
 
 $('.information__block--circle').on('click', function(){
 	$('.information__block').removeClass('active');
+	
 })
 $('.header__link--container').on('mouseenter', function(){
 	$(this).children('.header__dropdown').fadeIn()
