@@ -43,7 +43,7 @@
 							<ul class="header__dropdown text-right pr1">
 								<?php while( have_rows('inn') ): the_row();?>
 									<?php if(get_sub_field('unavailable') == 0){;?>
-										<li><a href="<?php the_sub_field('room_booking_link');?>" class="heading__light"><?php the_sub_field('location');?></a></li>
+										<li><a href="<?php the_sub_field('room_booking_link');?>" class="heading__light"><?php the_sub_field('name');?> <?php the_sub_field('location');?></a></li>
 									<?php };?>
 								<?php endwhile; ?>
 							</ul>
@@ -55,7 +55,7 @@
 							<ul class="header__dropdown text-right pr1">
 								<?php while( have_rows('inn') ): the_row();?>
 									<?php if(get_sub_field('unavailable') == 0){;?>
-										<li><a href="<?php the_sub_field('table_booking_link');?>" class="heading__light"><?php the_sub_field('location');?></a></li>
+										<li><a href="<?php the_sub_field('table_booking_link');?>" class="heading__light"><?php the_sub_field('name');?> <?php the_sub_field('location');?></a></li>
 									<?php };?>
 								<?php endwhile; ?>
 							</ul>

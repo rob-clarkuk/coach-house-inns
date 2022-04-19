@@ -20,6 +20,13 @@
 		background-size:cover;
 		background-repeat:no-repeat;
 		background-position:center;
+		&--small{
+			height:60vh;
+			width:100vw;
+			background-size:cover;
+			background-repeat:no-repeat;
+			background-position:center;
+		}
 	}
 	&__content{
 		position:absolute;

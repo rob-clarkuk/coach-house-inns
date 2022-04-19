@@ -52,7 +52,7 @@
 					<?php endwhile; ?>
 				<?php endif; ?>
 			</div>
-			<div class="footer__copyright pt2 heading__mid-grey">
+			<div class="footer__copyright pt2 heading__light">
 				&copy; Copyright <?php echo date("Y"); ?> <?php bloginfo( 'name' ); ?>. All Rights Reserved
 			</div>
 		</div>

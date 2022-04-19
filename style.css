@@ -1404,7 +1404,7 @@ textarea {
 }
 
 .scrolled .header {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(97, 123, 105, 0.8);
 	transition: .3s;
 }
 
@@ -1414,7 +1414,7 @@ textarea {
 }
 
 footer {
-	background-color: #333;
+	background-color: #617B69;
 }
 
 footer a {
@@ -1606,6 +1606,14 @@ footer a:hover {
 .hero__image {
 	width: 100vw;
 	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.hero__image--small {
+	height: 60vh;
+	width: 100vw;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
